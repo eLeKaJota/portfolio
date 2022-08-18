@@ -79,10 +79,22 @@ $secondary-color--dark: #666;
     font-weight: 200;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
     .card {
         justify-content: center;
         align-items: center;
+    }
+    .cardContent {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .image {
+        max-width: 250px;
+        max-height: 150px;
+        //width: 100%;
+        //height: 200px;
     }
 }
 
