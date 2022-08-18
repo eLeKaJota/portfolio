@@ -1,0 +1,219 @@
+//light
+$base-color: #fafafa;
+$primary-color: #333;
+$secondary-color: #ffffff;
+$primary-font: 'Open Sans', sans-serif;
+$secondary-font: 'Montserrat', sans-serif;
+$title-font: 'Kalam', sans-serif;
+
+//dark
+$base-color--dark: #333;
+$primary-color--dark: #fafafa;
+$secondary-color--dark: #666;
+
+.content {
+    width: 100%;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    list-style: none;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $secondary-color--dark;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 2px;
+    margin-left: 2px;
+
+    :hover {
+        background-color: #49718a;
+        color: $base-color;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.pageLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.active {
+    color: #49718a;
+    font-weight: bold;
+}
+
+.previous {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $secondary-color--dark;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 2px;
+    margin-left: 2px;
+
+    :hover {
+        background-color: #49718a;
+        color: $base-color;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $secondary-color--dark;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 2px;
+    margin-left: 2px;
+
+    :hover {
+        background-color: #49718a;
+        color: $base-color;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.previousLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nextLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.disabled {
+    background-color: $secondary-color--dark;
+    cursor: not-allowed;
+
+    :hover {
+        background-color: $secondary-color--dark;
+        color: $primary-color;
+        text-decoration: none;
+        cursor: not-allowed;
+        transition: all 0.3s ease-in-out;
+    }
+    //color: $secondary-color;
+}
+
+.disabledLink {
+    background-color: $secondary-color--dark;
+
+    //color: $secondary-color;
+}
+//
+//.break {
+//    background-color: $base-color;
+//    color: $secondary-color;
+//}
+//
+//.breakLink {
+//    background-color: $base-color;
+//    color: $secondary-color;
+//}
+
+
+.messageBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    //width: 95%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+    transition: all 0.3s ease-in-out;
+    //margin-bottom: 20px;
+    margin: 10px 20px;
+    padding: 20px;
+}
+
+.messageName {
+    font-size: 12px;
+    font-weight: 300;
+    //color: $primary-color;
+}
+
+.messageEmail {
+    font-size: 12px;
+    font-weight: 300;
+    //color: $secondary-color;
+}
+
+.messageMessage {
+    font-size: 12px;
+    font-weight: 400;
+    white-space: pre;
+    text-align: left;
+    //color: $secondary-color;
+}
+
+.messageDate {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+
+[data-theme='dark'] {
+    .messageBlock {
+        box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.2);
+    }
+    .disabled {
+        background-color: $secondary-color--dark;
+        cursor: not-allowed;
+
+        :hover {
+            background-color: $secondary-color--dark;
+            color: $secondary-color;
+            text-decoration: none;
+            cursor: not-allowed;
+            transition: all 0.3s ease-in-out;
+        }
+        //color: $secondary-color;
+    }
+
+    .disabledLink {
+        background-color: $secondary-color--dark;
+        color: $secondary-color;
+        //color: $secondary-color;
+    }
+}

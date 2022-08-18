@@ -1,0 +1,56 @@
+//light
+$base-color: #fafafa;
+$primary-color: #333;
+$secondary-color: #666;
+$primary-font: 'Open Sans', sans-serif;
+$secondary-font: 'Montserrat', sans-serif;
+$title-font: 'Kalam', sans-serif;
+
+//dark
+$base-color--dark: #333;
+$primary-color--dark: #fafafa;
+$secondary-color--dark: #666;
+
+.content {
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem;
+    //flex-basis: 33%;
+    flex-grow: 1;
+    gap: 5px;
+    //flex: 1;
+}
+
+.cardLogo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    :hover {
+        color: #49718a;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+}
+
+.cardTitle {
+    margin-top: 3px;
+    width: 100%;
+    text-align: center;
+    :hover {
+        cursor: pointer;
+        transition: 0.3s;
+    }
+}
+
+//[data-theme='dark'] {
+//
+//}

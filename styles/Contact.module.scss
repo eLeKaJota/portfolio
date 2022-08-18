@@ -1,0 +1,99 @@
+//light
+$base-color: #fafafa;
+$primary-color: #333;
+$secondary-color: #666;
+$primary-font: 'Open Sans', sans-serif;
+$secondary-font: 'Montserrat', sans-serif;
+$title-font: 'Kalam', sans-serif;
+
+//dark
+$base-color--dark: #333;
+$primary-color--dark: #fafafa;
+$secondary-color--dark: #666;
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 10px;
+}
+
+.formRow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+
+.formInput {
+    width: 80%;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: $primary-font;
+    transition: 0.3s;
+}
+
+.formTextArea {
+    width: 80%;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: $primary-font;
+    transition: 0.3s;
+}
+
+.formButton {
+    width: 100%;
+    font-size: 1rem;
+    font-family: $primary-font;
+    transition: 0.3s;
+    :hover {
+        background-color: #49718a;
+        color: $base-color;
+    }
+}
+
+.btnSubmit {
+    width: 82%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    //padding: 10px;
+    font-size: 1rem;
+    font-family: $primary-font;
+    transition: 0.3s;
+    background-color: $primary-color;
+    color: #fff;
+    cursor: pointer;
+    :hover {
+        background-color: $secondary-color;
+        color: #fff;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+}
+
+[data-theme='dark'] {
+}
